@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:background="#2f4f4f">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="40dp"
+                android:orientation="vertical"
+                android:background="#2f4f4f">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#d3d3d3"
+                    android:layout_margin="20dp"
+                    android:padding="30dp"
+                    android:text="NFE + Energy"
+                    android:textSize="20sp"
+                    android:fontFamily="serif"
+                    android:textAllCaps="true"
+                    android:onClick="nfe"
+                    android:hint="NFE and Energy"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#d3d3d3"
+                    android:layout_margin="20dp"
+                    android:padding="30dp"
+                    android:text="NFE + Energy\n(Raw Ingredients)"
+                    android:textSize="20sp"
+                    android:fontFamily="serif"
+                    android:hint="NFE and Raw Ingredient Energy"
+                    android:textAllCaps="true"
+                    android:onClick="individual_sample"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Courtesy: Oluwapelumi Adeosun \nOn behalf of the 2019 Nicoprime IT students."
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/main"/>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
